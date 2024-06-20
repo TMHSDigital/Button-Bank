@@ -31,30 +31,45 @@ button {
     cursor: pointer;
 }
 
-h1, h2 {
+h1, h2, h3 {
     margin: 0;
 }
 
-.btn-static {
-    background-color: #007BFF;
+/* Static Button: Simple Button */
+.btn-simple {
+    background-color: #008CBA;
     border: none;
     color: white;
-    border-radius: 4px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
     transition: background-color 0.3s;
 }
 
-.btn-static:hover {
-    background-color: #0056b3;
+.btn-simple:hover {
+    background-color: #005f75;
 }
 
-.btn-animated {
-    background-color: #28a745;
+/* Animated Button: Animated Gradient Button */
+.btn-animated-gradient {
+    background: linear-gradient(45deg, #ff0066, #ffcc00, #33ccff);
+    background-size: 200% 200%;
     border: none;
     color: white;
-    border-radius: 4px;
-    transition: transform 0.3s;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-position 0.3s;
 }
 
-.btn-animated:hover {
-    transform: scale(1.1);
+.btn-animated-gradient:hover {
+    background-position: right;
 }
