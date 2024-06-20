@@ -1,60 +1,32 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-header, footer {
-    width: 100%;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
-
-main {
-    width: 80%;
-    margin: 20px 0;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-h1, h2 {
-    margin: 0;
-}
-
-.btn-static {
-    background-color: #007BFF;
-    border: none;
-    color: white;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.btn-static:hover {
-    background-color: #0056b3;
-}
-
-.btn-animated {
-    background-color: #28a745;
-    border: none;
-    color: white;
-    border-radius: 4px;
-    transition: transform 0.3s;
-}
-
-.btn-animated:hover {
-    transform: scale(1.1);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Bank</title>
+    <link rel="stylesheet" href="https://fOuttaMyPaint.github.io/Button-Bank/website/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Button Bank</h1>
+        <p>A collection of static and animated buttons</p>
+    </header>
+    <main>
+        <section id="static-buttons">
+            <h2>Static Buttons</h2>
+            <button class="btn-static">Static Button 1</button>
+            <button class="btn-static">Static Button 2</button>
+            <!-- Add more static buttons here -->
+        </section>
+        <section id="animated-buttons">
+            <h2>Animated Buttons</h2>
+            <button class="btn-animated">Animated Button 1</button>
+            <button class="btn-animated">Animated Button 2</button>
+            <!-- Add more animated buttons here -->
+        </section>
+    </main>
+    <footer>
+        <p>Created by T (fOuttaMyPaint)</p>
+    </footer>
+</body>
+</html>
